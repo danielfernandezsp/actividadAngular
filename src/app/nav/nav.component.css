@@ -1,0 +1,18 @@
+nav {
+    background-color: black;
+    color: white;
+}
+
+a>div {
+    border: solid 1px white;
+    margin: 5px;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
