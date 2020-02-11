@@ -1,17 +1,26 @@
 section {
-    padding: 15px;
-    font-size: 22px;
-    background-color: rgba(114, 113, 107, 0.233);
+  padding: 15px;
+  font-size: 22px;
+  background-color: rgba(114, 113, 107, 0.233);
 }
 
 article {
-    padding: 15px;
+  padding: 15px;
 }
 
 .imagenes {
-    width: 250px;
-    height: 250px;
-    margin: auto;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+.ampliacion:hover {
+  width: 300px;
+}
+
+.ampliacion {
+  width: 250px;
+  transition: width 2s;
 }
 
 img {
@@ -19,15 +28,13 @@ img {
 }
 
 #img1 {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 #str {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 #img3 {
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
-
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
 }

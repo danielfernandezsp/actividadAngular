@@ -8,6 +8,7 @@ import { SectionComponent } from './section/section.component';
 import { FooterComponent } from './footer/footer.component';
 import { AsideComponent } from './aside/aside.component';
 import { NavComponent } from './nav/nav.component';
+import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavComponent } from './nav/nav.component';
     SectionComponent,
     FooterComponent,
     AsideComponent,
-    NavComponent
+    NavComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
