@@ -6,5 +6,12 @@ header {
 }
 
 h1 {
+    display: inline-block;
     color: black;
+    font-weight: bold;
+}
+
+img {
+    float: right;
+    width: 50px;
 }
