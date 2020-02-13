@@ -35,6 +35,4 @@ export class SectionFormComponent implements OnInit {
     document.getElementById("nombre").innerHTML = nombre;
     document.getElementById("apellido").innerHTML = apellido;
   }
-
-
 }

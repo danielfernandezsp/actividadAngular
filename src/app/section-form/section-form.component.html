@@ -1,14 +1,17 @@
 <section>
-    <h1>Ejemplo - sessionStorage</h1>
+    <h2 class="container bg-dark text-white text-center my-4 py-4">Formulario</h2>
               
     <input type="text" placeholder="Nombre" id="nombretxt"><br><br>   
-    <input type="text" placeholder="Apellido" id="apellidotxt"><br><br>
-    <button id="boton-guardar" (click)="guardar()">Guardar en local</button><br>
+    <input type="text" placeholder="Apellidos" id="apellidotxt"><br><br>
+    <!-- <input type="email" placeholder="Email" id="email"><br><br>
+    <input type="text" placeholder="Teléfono" id="telefono"><br><br> -->
+
+    <button id="boton-guardar" (click)="guardar()">Guardar</button><br>
                
-    <hr />
+    <hr/>
     Nombre almacenado:
     <label type="text" id="nombre"></label><br>                          
-    Apellido almacenado:
+    Apellidos almacenado:
     <label type="text" id="apellido"></label><br>
     
     <button id="boton-cargar" (click)="cargar()">
