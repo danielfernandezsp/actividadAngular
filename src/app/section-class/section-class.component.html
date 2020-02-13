@@ -1,0 +1,17 @@
+<section>
+    <h2 class="container bg-dark text-white text-center my-4 py-4">Ejemplos de ngClasss</h2>
+
+    <div id="galeria" class="my-4 d-flex justify-content-between">
+
+        <button class="d-inline-block btn btn-warning" (click)="nFoto2=nFoto2-1" (click)="recalculando2()">Before</button>
+    
+        <div class="d-inline-block">
+            <img class="d-none animated bounce fadeIn" [ngClass]="{'d-block':nFoto2==0}" src="../../assets/resident evil.png" alt="">
+            <img class="d-none animated bounce fadeIn" [ngClass]="{'d-block':nFoto2==1}" src="../../assets/terminator.png" alt="">
+            <img class="d-none animated bounce fadeIn" [ngClass]="{'d-block':nFoto2==2}" src="../../assets/JW.png" alt="">
+        </div>
+    
+        <button class="d-inline-block btn btn-warning" (click)="nFoto2=nFoto2+1" (click)="recalculando2()">Next</button>
+    </div>
+
+</section>

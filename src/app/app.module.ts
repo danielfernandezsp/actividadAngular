@@ -9,6 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { AsideComponent } from './aside/aside.component';
 import { NavComponent } from './nav/nav.component';
 import { SocialComponent } from './social/social.component';
+import { SectionClassComponent } from './section-class/section-class.component';
+import { SectionForComponent } from './section-for/section-for.component';
+import { SectionIfComponent } from './section-if/section-if.component';
+import { SectionFormComponent } from './section-form/section-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { SocialComponent } from './social/social.component';
     FooterComponent,
     AsideComponent,
     NavComponent,
-    SocialComponent
+    SocialComponent,
+    SectionClassComponent,
+    SectionForComponent,
+    SectionIfComponent,
+    SectionFormComponent
   ],
   imports: [
     BrowserModule,
