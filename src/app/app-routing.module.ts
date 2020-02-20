@@ -6,7 +6,6 @@ import { SectionForComponent } from './section-for/section-for.component';
 import { SectionFormComponent } from './section-form/section-form.component';
 import { SectionIfComponent } from './section-if/section-if.component';
 
-
 const routes: Routes = [
   { path: 'section', component: SectionComponent },
   { path: '', redirectTo: '/section', pathMatch: 'full' },

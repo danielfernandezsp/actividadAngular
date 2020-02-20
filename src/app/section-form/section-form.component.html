@@ -1,23 +1,60 @@
 <section>
     <h2 class="container bg-dark text-white text-center my-4 py-4">Formulario</h2>
               
-    <input type="text" placeholder="Nombre" id="nombretxt"><br><br>   
-    <input type="text" placeholder="Apellidos" id="apellidotxt"><br><br>
-    <!-- <input type="email" placeholder="Email" id="email"><br><br>
-    <input type="text" placeholder="Teléfono" id="telefono"><br><br> -->
-
-    <button id="boton-guardar" (click)="guardar()">Guardar</button><br>
-               
-    <hr/>
-    Nombre almacenado:
-    <label type="text" id="nombre"></label><br>                          
-    Apellidos almacenado:
-    <label type="text" id="apellido"></label><br>
-    
-    <button id="boton-cargar" (click)="cargar()">
-    Cargar elementos
-    </button>
-
-    
-    <hr />
+    <div class="register animated bounce fadeIn">
+        <form class="registro-form" id="registro-form" method="get" action="">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Email <strong>*</strong></label>
+                    <input type="email" class="form-control" id="email" (blur)="validaEmail()" name="email" placeholder="Email">
+                    <p id="email-error"></p>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Contraseña <strong>*</strong></label>
+                    <input type="password" class="form-control" id="contraseña" (blur)="validaContrasenia()" name="contraseña"
+                        placeholder="Entre 8 y 16 caracteres, un dígito, una minúscula y una mayúscula.">
+                        <p id="contraseña-error"></p>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="inputAddress">Nombre <strong>*</strong></label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" (blur)="validaNombre()"
+                    placeholder="Nombre">
+                    <p id="nombre-error"></p>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Apellidos <strong>*</strong></label>
+                    <input type="text" class="form-control" id="apellidos" (blur)="validaApellidos()" name="apellidos"
+                        placeholder="Apellidos">
+                        <p id="apellidos-error"></p>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Nacimiento </label>
+                    <input type="date" class="form-control" id="nacimiento" name="nacimiento">
+                    <p id="nacimiento-error"></p>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>DNI <strong>*</strong></label>
+                    <input type="text" class="form-control" id="dni" (blur)="validaNIF()" name="dni" placeholder="77777777-X">
+                    <p id="dni-error"></p>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Tarjeta de crédito</label>
+                    <input type="text" class="form-control" id="tarjeta" name="tarjeta">
+                    <p id="tarjeta-error"></p>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Créditos</label>
+                    <input type="text" class="form-control" id="credito" name="credito">
+                    <p id="credito-error"></p>
+                </div>
+            </div>
+            <button type="" id="boton-registrar" value="Submit"
+                class="submit text-success registrar" href="#">Registrar</button>
+            <button type="reset" class="text-danger d-inline-block cancelar" href="#">Cancelar</button>
+        </form>
+    </div>
 </section>

@@ -14,6 +14,8 @@ import { SectionForComponent } from './section-for/section-for.component';
 import { SectionIfComponent } from './section-if/section-if.component';
 import { SectionFormComponent } from './section-form/section-form.component';
 
+// Servicios
+import { PeliculasService } from './peliculas.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,7 @@ import { SectionFormComponent } from './section-form/section-form.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PeliculasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
